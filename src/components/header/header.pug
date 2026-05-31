@@ -12,9 +12,9 @@ mixin header(props = {})
           a.prevdef.header__menu-link(href="#") Blog
           a.prevdef.header__menu-link(href="#") Contact
         .header__block.header__block1
+          .header__image-container
+            img.header__author-pic(src=require('../components/header/img/header__author-pic.png'), alt="author-pic")
+        .header__block.header__block2
           h1.header__headline Hi, I am John, Creative Technologist
           p.header__paragraph Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
           a.prevdef.header__download-link(href="#") Download Resume
-        .header__block.header__block2
-          .header__image-container
-            img.header__author-pic(src=require('../components/header/img/header__author-pic.png'), alt="author-pic")
