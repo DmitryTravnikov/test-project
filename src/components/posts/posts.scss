@@ -3,31 +3,129 @@
 // @import '~bootstrap/scss/bootstrap-reboot';
 
 .posts {
+  background: #edf7fa;
   &__wrapper {
+    padding-bottom: 20px;
+    @media only screen and (min-width: 992px) {
+      padding-bottom: 32px;
+    }
   }
   &__header {
+    @media only screen and (min-width: 992px) {
+      @include flex(row, wrap, space-between, center);
+    }
   }
   &__recent {
+    width: 100%;
+    margin: 0;
+    font-family: $hr;
+    font-size: 18px;
+    line-height: 60px;
+    color: #21243d;
+    text-align: center;
+    @media only screen and (min-width: 992px) {
+      width: auto;
+      font-size: 22px;
+    }
   }
   &__view-all-link {
+    text-decoration: none;
+    color: #00a8cc;
+    font-family: $hr;
+    font-size: 16px;
+    display: none;
+
+    @media only screen and (min-width: 992px) {
+      display: block;
+    }
   }
   &__blocks-container {
+    @include flex(column, wrap, center, center);
+    @media only screen and (min-width: 992px) {
+      margin-top: 24px;
+      @include flex(row, wrap, flex-start, center);
+    }
   }
   &__block {
+    font-family: $hr;
+    font-size: 16px;
+    color: #21243d;
+    background: #fff;
+    @include flex(column, wrap, center, center);
+    padding-top: 12px;
+    padding-left: 19px;
+    padding-right: 8px;
+    padding-bottom: 22px;
+    border-radius: 4px;
+    @media only screen and (min-width: 992px) {
+      font-size: 18px;
+      width: 418px;
+      padding-top: 24px;
+      padding-left: 23px;
+      padding-right: 21px;
+      padding-bottom: 7px;
+    }
   }
   &__block1 {
+    @media only screen and (min-width: 992px) {
+      margin-right: 22px;
+    }
   }
   &__block2 {
+    margin-top: 17px;
+    @media only screen and (min-width: 992px) {
+      margin-top: 0px;
+    }
   }
   &__block-headline {
+    width: 100%;
+    margin: 0;
+    font-family: $hb;
+    font-size: 22px;
+    line-height: 30px;
+    color: #21243d;
+    text-align: left;
+
+    @media only screen and (min-width: 992px) {
+      font-size: 26px;
+    }
   }
   &__date-n-hashtags {
+    width: 100%;
+    @include flex(row, wrap, flex-start, flex-start);
+    margin-top: 12px;
+    @media only screen and (min-width: 992px) {
+      margin-top: 17px;
+    }
   }
   &__date {
+    margin: 0;
+    text-align: left;
+    position: relative;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 21px;
+      background: #000;
+      position: absolute;
+      top: 0px;
+      right: -24px;
+    }
   }
   &__hashtags {
+    margin: 0;
+    text-align: left;
+    margin-left: 48px;
   }
   &__block-paragraph {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    margin-top: 19px;
+    @media only screen and (min-width: 992px) {
+      font-size: 16px;
+      padding-right: 30px;
+    }
   }
 }
 
