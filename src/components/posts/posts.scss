@@ -2,6 +2,35 @@
 @import '../../scss/mixins';
 // @import '~bootstrap/scss/bootstrap-reboot';
 
+.posts {
+  &__wrapper {
+  }
+  &__header {
+  }
+  &__recent {
+  }
+  &__view-all-link {
+  }
+  &__blocks-container {
+  }
+  &__block {
+  }
+  &__block1 {
+  }
+  &__block2 {
+  }
+  &__block-headline {
+  }
+  &__date-n-hashtags {
+  }
+  &__date {
+  }
+  &__hashtags {
+  }
+  &__block-paragraph {
+  }
+}
+
 // Bootstrap Media Queries
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
