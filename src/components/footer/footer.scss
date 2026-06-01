@@ -2,6 +2,35 @@
 @import '../../scss/mixins';
 // @import '~bootstrap/scss/bootstrap-reboot';
 
+.footer {
+  &__wrapper {
+  }
+  &__social-links-container {
+  }
+  &__social-link {
+    svg {
+      path {
+      }
+    }
+  }
+  &__social-link1 {
+  }
+  &__social-link2 {
+  }
+  &__social-link3 {
+  }
+  &__facebook {
+  }
+  &__instagram {
+  }
+  &__twitter {
+  }
+  &__linkedin {
+  }
+  &__copy {
+  }
+}
+
 // Bootstrap Media Queries
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
