@@ -1,0 +1,172 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+.works {
+  background: #fff;
+  &__wrapper {
+    padding-bottom: 30px;
+  }
+  &__headline {
+    width: 100%;
+    margin: 0;
+    color: #21243d;
+    font-family: $hr;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    @media only screen and (min-width: 576px) {
+      text-align: left;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 22px;
+    }
+  }
+  &__blocks-container {
+    width: 100%;
+    @include flex(column, wrap, center, center);
+    @media only screen and (min-width: 992px) {
+      margin-top: 20px;
+    }
+  }
+  &__block {
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 17px;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #e0e0e0;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    @media only screen and (min-width: 576px) {
+      @include flex(column, wrap, flex-start, flex-start);
+    }
+    @media only screen and (min-width: 992px) {
+      @include flex(row, wrap, flex-start, flex-start);
+      margin-top: 29px;
+      padding-bottom: 15px;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+  &__block1 {
+  }
+  &__block2 {
+    display: none;
+    @media only screen and (min-width: 992px) {
+      display: flex;
+    }
+  }
+  &__block3 {
+    display: none;
+    @media only screen and (min-width: 992px) {
+      display: flex;
+    }
+  }
+  &__image {
+    border-radius: 6px;
+    width: 100%;
+    @media only screen and (min-width: 576px) {
+      width: auto;
+    }
+  }
+  &__image1 {
+  }
+  &__image2 {
+  }
+  &__image3 {
+    width: 100%;
+  }
+  &__block-text {
+    @include flex(column, wrap, center, center);
+    color: #21243d;
+    width: 100%;
+    margin-top: 17px;
+    @media only screen and (min-width: 992px) {
+      width: 594px;
+      margin-left: 18px;
+      margin-top: 0px;
+    }
+  }
+  &__block-headline {
+    width: 100%;
+    margin: 0px;
+    font-size: $hb;
+    font-size: 24px;
+    line-height: 30px;
+    @media only screen and (min-width: 992px) {
+      font-size: 30px;
+    }
+  }
+  &__date-n-hashtag {
+    width: 100%;
+    margin: 0px;
+    @include flex(row, wrap, flex-start, flex-start);
+    margin-top: 16px;
+    @media only screen and (min-width: 992px) {
+      margin-top: 26px;
+    }
+  }
+  &__date {
+    width: auto;
+    margin: 0px;
+    font-family: $hb;
+    font-size: 16px;
+    background: #142850;
+    border-radius: 16px;
+    color: #fff;
+    padding: 0px 12px;
+    @media only screen and (min-width: 992px) {
+      font-size: 18px;
+    }
+  }
+  &__hashtag {
+    width: auto;
+    margin: 0px;
+    font-family: $hr;
+    font-size: 16px;
+    color: #8695a4;
+    margin-left: 22px;
+    @media only screen and (min-width: 992px) {
+      font-size: 20px;
+    }
+  }
+  &__block-paragraph {
+    width: 100%;
+    margin: 0px;
+    font-family: $hr;
+    font-size: 16px;
+    margin-top: 24px;
+    @media only screen and (min-width: 992px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+// Bootstrap Media Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+}
+
+// * {@include outline()}
